@@ -50,6 +50,7 @@ const App = () => {
          onChange={(e) => setNum(Number(e.target.value))}
           type="number"
           placeholder="12"
+          min={1}
           className="w-[100px] border bg-white border-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md py-2 px-4" />
         <select 
         value={type}
