@@ -41,8 +41,8 @@ const App = () => {
   return (
     <div className="min-h-screen bg-white py-12">
       <div className="w-9/12 mx-auto">
-      <div className="flex justify-between">
-         <h1 className="text-3xl font-bold">Gradient Generator - {type}</h1>
+      <div className="flex flex-col md:flex-row justify-between gap-4">
+         <h1 className="text-lg md:text-3xl font-bold">Gradient Generator - {type}</h1>
 
         <div className="flex gap-4"> 
          <input 
@@ -64,7 +64,7 @@ const App = () => {
        
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4 mt-8">
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
         {
           gradients.map((item, index) => (
             <div key={index} 
